@@ -28,3 +28,19 @@ an overview of the migration steps.
 
 See full instructions in the
 [Getting Started guide](https://developers.google.com/drive/android/get-started).
+
+
+## Signature
+keytool -genkey -v -keystore ./upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias drive -storepass ^YHN6yhn -keypass ^YHN6yhn
+
+## keytool -keystore ./upload-keystore.jks -list -v
+
+    Certificate fingerprints:
+    SHA1: 2D:31:FC:4B:EA:E3:10:3E:8A:23:06:33:8B:60:72:67:A6:97:C3:C7
+    SHA256: 13:7F:5D:02:FE:E9:8A:8D:74:DD:8F:E6:3A:55:E8:19:08:CB:08:97:FE:DA:F4:34:4B:2A:44:0B:4E:A5:BF:1A
+
+## https://developers.google.com/identity/sign-in/android/start
+
+## ![快捷生成凭证（OAuth 2.0 Client ID）](551655883648_.pic.jpg)
+
+## ![将生成两个凭证：OAuth client (Android) 、Web client (Auto-created for Google Sign-in)](571655883676_.pic.jpg)
