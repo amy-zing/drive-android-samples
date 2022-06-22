@@ -39,22 +39,27 @@ drive -storepass ^YHN6yhn -keypass ^YHN6yhn
     SHA1: 2D:31:FC:4B:EA:E3:10:3E:8A:23:06:33:8B:60:72:67:A6:97:C3:C7
     SHA256: 13:7F:5D:02:FE:E9:8A:8D:74:DD:8F:E6:3A:55:E8:19:08:CB:08:97:FE:DA:F4:34:4B:2A:44:0B:4E:A5:BF:1A
 
-## https://developers.google.com/identity/sign-in/android/start
-
-## 快捷生成凭证（OAuth 2.0 Client ID）
-
-![](551655883648_.pic.jpg)
-
-## 将生成两个凭证：OAuth client (Android) 、Web client (Auto-created for Google Sign-in)
-
-![](571655883676_.pic.jpg)
-
 # 总结
 
 ## 后台的操作，包括
 
-1、创建工程 2、配置"OAuth 同意屏幕"，及添加测试账号 3、创建凭证 4、启用API和服务
+- 创建工程
+- 启用API和服务
+    - 添加 Google Drive API
+- 配置"OAuth 同意屏幕"，
+    - 添加请求用户为应用授予的权限范围
+        - ![](531655866791_.pic.jpg)
+    - 添加测试账号
+- [创建凭证](https://developers.google.com/identity/sign-in/android/start)
+  ## 快捷生成凭证（OAuth 2.0 Client ID）
+
+  ![](551655883648_.pic.jpg)
+
+  ## 将生成两个凭证：OAuth client (Android) 、Web client (Auto-created for Google Sign-in)
+
+  ![](571655883676_.pic.jpg)
 
 ## 客户端的操作，包括
 
-1、修改applicationId 2、生成新的keystore.jks（build.gradle不要忘记引用），从而得到SHA1（用于后台凭证创建）
+- 配置 applicationId
+- 生成新的keystore.jks（build.gradle不要忘记引用），从而得到SHA1（用于后台凭证创建）
